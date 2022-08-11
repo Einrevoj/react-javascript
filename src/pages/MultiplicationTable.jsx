@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-function Strings() {
+function MultiplicationTable() {
   const [input, setInput] = useState("");
 
   return (
@@ -11,11 +11,11 @@ function Strings() {
           <input
             type="text"
             className="w-100 lead"
+            placeholder="Input"
             value={input}
             onChange={(e) => setInput(e.target.value)}
           />
         </div>
-
         <div className="col-md-5">
           <textarea
             name="text"
@@ -24,18 +24,12 @@ function Strings() {
             rows="10"
             readOnly={true}
             placeholder="Output"
-            value={input
-              .split("")
-              .reverse("")
-              .join("")
-              .split(" ")
-              .reverse("")
-              .join(" ")}
-          ></textarea>
+            value={input}
+          />
         </div>
       </div>
     </div>
   );
 }
 
-export default Strings;
+export default MultiplicationTable;
