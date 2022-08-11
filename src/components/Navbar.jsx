@@ -27,6 +27,21 @@ const Navbar = () => {
                   Prime-Numbers
                 </NavLink>
               </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/multiplication-table">
+                  Multiplication-table
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/sum-of-natural-numbers">
+                  Sum-Of-Natural-Numbers
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/sum-of-all-digits">
+                  Sum-Of-All-Digits
+                </NavLink>
+              </li>
             </ul>
           </div>
         </div>

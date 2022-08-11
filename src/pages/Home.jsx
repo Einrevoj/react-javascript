@@ -11,10 +11,19 @@ function Home() {
           <Link to="/fibonacci">Fibonacci</Link>
         </li>
         <li class="list-group-item list-group-item-warning">
-          <Link to="/strings">Strings</Link>
+          <Link to="/Multiplication-table">MultiplicationTable</Link>
         </li>
         <li class="list-group-item list-group-item-success">
           <Link to="/prime-numbers">Prime Numbers</Link>
+        </li>
+        <li class="list-group-item list-group-item-warning">
+          <Link to="/strings">Strings</Link>
+        </li>
+        <li class="list-group-item list-group-item-warning">
+          <Link to="/sum-of-natural-numbers">Sum of Natural Numbers</Link>
+        </li>
+        <li class="list-group-item list-group-item-warning">
+          <Link to="/sum-of-all-digits">Sum of All Digits</Link>
         </li>
         <li class="list-group-item list-group-item-info">
           This is a warning list group item
