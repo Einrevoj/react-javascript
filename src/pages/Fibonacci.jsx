@@ -1,10 +1,12 @@
 import React from "react";
 import { useState } from "react";
 
+
+
 function Fibonacci() {
   const [number, setNumber] = useState(null);
-  var first = 0;
-  var second = 1;
+  let first = 0;
+  let second = 1;
   const sequence = [];
 
   const generateFibonacci = () => {
@@ -24,10 +26,10 @@ function Fibonacci() {
     }
 
     // Third scenario
-    for (var i = 1; i <= number; i++) {
+    for (let i = 1; i <= number; i++) {
       sequence.push(first);
 
-      var nextTerm = first + second;
+      let nextTerm = first + second;
       first = second;
       second = nextTerm;
     }
