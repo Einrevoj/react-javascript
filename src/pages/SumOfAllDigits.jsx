@@ -4,14 +4,27 @@ import { useState } from "react";
 function SumOfAllDigits() {
   const [input, setInput] = useState("");
 
-  let total = 0;
+  
   const getSumOfDigits = () => {
-    input.split("").map((data) => {
-      if (!isNaN(data)) {
-        total = total + parseInt(data);
+    let total = 0;
+
+    // input.split("").forEach((character) => {
+    //   if (
+    //     character.toLowerCase() === "a")
+    //      {
+    //       total = total + 1;
+    //   }
+    // });
+
+     input.split("").forEach((character) => {
+      if (
+        character.toLowerCase().match(/[aeiou]/))
+         {
+          total = total + 1;
       }
     });
-    return total;
+  
+
   };
 
   return (

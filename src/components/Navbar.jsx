@@ -42,6 +42,11 @@ const Navbar = () => {
                   Sum-Of-All-Digits
                 </NavLink>
               </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/sum-of-all-digits">
+                  Check-Within-Numbers
+                </NavLink>
+              </li>
             </ul>
           </div>
         </div>

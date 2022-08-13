@@ -25,18 +25,32 @@ function Home() {
         <li class="list-group-item list-group-item-warning">
           <Link to="/sum-of-all-digits">Sum of All Digits</Link>
         </li>
-        <li class="list-group-item list-group-item-info">
-          This is a warning list group item
+        <li class="list-group-item list-group-item-warning">
+          <Link to="/check-within-number">Check Within Numbers</Link>
         </li>
-        <li class="list-group-item list-group-item-secondary">
-          This is a info list group item
+        <li class="list-group-item list-group-item-warning">
+          <Link to="/right-triangle">right Triangle</Link>
         </li>
-        <li class="list-group-item list-group-item-light">
-          This is a light list group item
+        <li class="list-group-item list-group-item-warning">
+          <Link to="/isoschele-triangle">Isosceles Triangle</Link>
         </li>
-        <li class="list-group-item list-group-item-dark">
-          This is a dark list group item
+        <li class="list-group-item list-group-item-warning">
+          <Link to="/number-right-triangle">Number Right Triangle</Link>
         </li>
+        <li class="list-group-item list-group-item-warning">
+          <Link to="/get-largest-number">Get Largest Number</Link>
+        </li>
+        <li class="list-group-item list-group-item-warning">
+          <Link to="/count-number-of-vowels">Count Number Of Vowels</Link>
+        </li>
+        <li class="list-group-item list-group-item-warning">
+          <Link to="/number-iso-triangle">Number Iso Triangle</Link>
+        </li>
+        
+        
+      
+      
+
       </ol>
     </div>
   );
