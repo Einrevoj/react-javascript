@@ -48,6 +48,9 @@ function Home() {
         <li className="list-group-item list-group-item-light">
           <Link to="/number-triangle">Number Isosceles Triangle</Link>
         </li>
+        <li className="list-group-item list-group-item-light">
+          <Link to="/name-randomizer">Name Randomizer</Link>
+        </li>
       </ul>
     </div>
   );

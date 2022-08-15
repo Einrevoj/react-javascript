@@ -15,6 +15,7 @@ import NumberRightTriangle from './pages/NumberRightTriangle';
 import GetTheLargest from './pages/GetTheLargest';
 import Vowels from './pages/Vowels';
 import NumberTriangle from './pages/NumberTriangle';
+import RandomName from './pages/RandomName';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path='/get-largest-number' element={<GetTheLargest />} />
         <Route path='/get-the-number-of-vowels' element={<Vowels />} />
         <Route path='/number-triangle' element={<NumberTriangle />} />
+        <Route path='/name-randomizer' element={<RandomName />} />
       </Routes>
     </BrowserRouter>
   );
