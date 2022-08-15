@@ -1,53 +1,60 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 
-export default function LargestNumber() {
+export default function GetTheLargest() {
   const [firstInput, setFirstInput] = useState("");
   const [secondInput, setSecondInput] = useState("");
   const [thirdInput, setThirdInput] = useState("");
 
-  const getLargestNumber = () => {
-// if (
-//     parseFloat(firstInput) > parseFloat(secondInput) &&
-//         )>= firstInput && firstInput > thirdInput) {
-//         return firstInput;
-//     } else if (secondInput > firstInput && secondInput > thirdInput) {
-//         return secondInput;
-//     } else (thirdInput > firstInput && thirdInput > secondInput) {
-//         return thirdInput;
-//     }
-
-return Math.max(firstInput, secondInput, thirdInput);
-    
-};
+  const getTheLargestNumber = () => {
+    // if (
+    //   parseFloat(firstInput) > parseFloat(secondInput) &&
+    //   parseFloat(firstInput) > parseFloat(thirdInput)
+    // ) {
+    //   return firstInput;
+    // } else if (
+    //   parseFloat(secondInput) > parseFloat(firstInput) &&
+    //   parseFloat(secondInput) > parseFloat(thirdInput)
+    // ) {
+    //   return secondInput;
+    // } else {
+    //   return thirdInput;
+    // }
+    return Math.max(firstInput, secondInput, thirdInput);
+  };
 
   return (
     <div className="container p-5">
       <div className="row">
-        <div className="col-md-5">
+        <div className="col-12 w-50 pb-5">
           <input
             type="text"
-            className="w-100 lead"
+            className="lead"
             placeholder="Input"
             value={firstInput}
-            onChange={(e) => setFirstInput(e.target.value)}
+            onChange={(event) => {
+              setFirstInput(event.target.value);
+            }}
           />
-           <input
+          <input
             type="text"
-            className="w-100 lead"
+            className="lead"
             placeholder="Input"
             value={secondInput}
-            onChange={(e) => setSecondInput(e.target.value)}
+            onChange={(event) => {
+              setSecondInput(event.target.value);
+            }}
           />
-           <input
+          <input
             type="text"
-            className="w-100 lead"
+            className="lead"
             placeholder="Input"
             value={thirdInput}
-            onChange={(e) => setThirdInput(e.target.value)}
+            onChange={(event) => {
+              setThirdInput(event.target.value);
+            }}
           />
         </div>
-        <div className="col-md-5">{getLargestNumber()}</div>
+        <h1 className="col-12 w-100 text-primary">{getTheLargestNumber()}</h1>
       </div>
     </div>
   );

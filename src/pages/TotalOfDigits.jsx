@@ -1,17 +1,17 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 
-export default function Strings() {
+export default function TotalOfDigits() {
   const [input, setInput] = useState("");
 
-  const getReverseString = () => {
-    return input
-      .split("")
-      .reverse("")
-      .join("")
-      .split(" ")
-      .reverse("")
-      .join(" ");
+  const getTotalOfDigits = () => {
+    let total = 0;
+
+    input.split("").forEach((character) => {
+      if (!isNaN(character)) {
+        total = total + parseInt(character);
+      }
+    });
+    return total;
   };
 
   return (
@@ -28,7 +28,7 @@ export default function Strings() {
             }}
           />
         </div>
-        <h1 className="col-12 w-100 text-primary">{getReverseString()}</h1>
+        <h1 className="col-12 w-100 text-primary">{getTotalOfDigits()}</h1>
       </div>
     </div>
   );

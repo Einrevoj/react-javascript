@@ -1,27 +1,19 @@
 import React, { useState } from "react";
 
-export default function CheckWithin100To500() {
+export default function SumOfNatural() {
   const [input, setInput] = useState("");
 
-  const checkNumber = () => {
-    // Check if letter or null
+  const getSumOfNaturalNumbers = () => {
     if (isNaN(input) || !input) {
       return "Please enter a number";
     }
 
-    // let isWithin = "false";
-    // for (let i = 100; i <= 500; i++) {
-    //   if (i === parseInt(input)) {
-    //     isWithin = "true";
-    //   }
-    // }
+    let total = 0;
+    for (let i = 1; i <= input; i++) {
+      total = total + i;
+    }
 
-    // let isWithin = "false";
-    // if (100 <= parseInt(input) && parseInt(input) <= 500) {
-    //   isWithin = "true";
-    // }
-
-    return `${100 <= parseInt(input) && parseInt(input) <= 500}`;
+    return total;
   };
 
   return (
@@ -38,7 +30,9 @@ export default function CheckWithin100To500() {
             }}
           />
         </div>
-        <h1 className="col-12 w-100 text-primary">{checkNumber()}</h1>
+        <h1 className="col-12 w-100 text-primary">
+          {getSumOfNaturalNumbers()}
+        </h1>
       </div>
     </div>
   );

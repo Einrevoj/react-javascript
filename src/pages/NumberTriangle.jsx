@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-export default function NumberRightTriangle() {
+export default function NumberTriangle() {
   const [input, setInput] = useState("");
 
-  const generateRightTriangle = () => {
+  const generateIsoscelesTriangle = () => {
     // Check if letter or null
     if (isNaN(input) || !input) {
       return (
@@ -14,15 +14,24 @@ export default function NumberRightTriangle() {
     // input = 3
     let total = "";
     // total = " * * *"
-    const triangle = [];
-    // triangle = [" *", " * *", " * * *"]
+    const rightTriangle = [];
+    // rightTriangle = [" *", " * *", " * * *"]
     for (let i = 1; i <= input; i++) {
-      total = total + " " + i;
-      // total = total.concat(" ", i);
-      triangle.push(total);
+      total = total.concat(" ", i);
+      rightTriangle.push(total);
     }
 
-    return triangle.map((data, index) => (
+    // const reverseRightTriangle = rightTriangle.slice().reverse();
+    // rightTriangle.slice().reverse() = [" * * *", " * *", " *"]
+    // rightTriangle.slice().reverse().slice(1) = [" * *", " *"]
+    // [].concat(rightTriangle, reverseRightTriangle) = [" *", " * *", " * * *", " * *", " *"]
+
+    const fullTriangle = [].concat(
+      rightTriangle,
+      rightTriangle.slice().reverse().slice(1)
+    );
+
+    return fullTriangle.map((data, index) => (
       <h1 className="col-12 w-100 text-primary" key={index}>
         {data}
       </h1>
@@ -43,7 +52,7 @@ export default function NumberRightTriangle() {
             }}
           />
         </div>
-        {generateRightTriangle()}
+        {generateIsoscelesTriangle()}
       </div>
     </div>
   );
