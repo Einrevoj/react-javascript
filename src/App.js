@@ -16,6 +16,8 @@ import GetTheLargest from './pages/GetTheLargest';
 import Vowels from './pages/Vowels';
 import NumberTriangle from './pages/NumberTriangle';
 import RandomName from './pages/RandomName';
+import PracticeRightTriangle from './pages/PracticeRightTriangle';
+import PracticenNumberRightTriangle from './pages/PracticeNumberRightTriangle';
 
 function App() {
   return (
@@ -37,6 +39,8 @@ function App() {
         <Route path='/get-the-number-of-vowels' element={<Vowels />} />
         <Route path='/number-triangle' element={<NumberTriangle />} />
         <Route path='/name-randomizer' element={<RandomName />} />
+        <Route path='/practice-right-triangle' element={<PracticeRightTriangle/>} />
+        <Route path='/practice-number-right-triangle' element={<PracticenNumberRightTriangle/>} />
       </Routes>
     </BrowserRouter>
   );

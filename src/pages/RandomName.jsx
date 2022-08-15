@@ -41,7 +41,8 @@ return (
   <div className="container p-5">
     <div className="row">
       <div className="col-12 w-50 pb-5">
-        <button className="btn btn-warning w-50 mb-5" onClick={() => getName()}>
+        <button className="btn btn-warning w-50 mb-5" 
+        onClick={() => getName()}>
           Generate Name
         </button>
         <h1 className="text-primary" w-50 mb-5>

@@ -10,13 +10,14 @@ function Home() {
         </li>
 
         <li className="list-group-item list-group-item-primary">
-          <Link to="/fibonacci">Fibonacci</Link>
+          
+          <Link to="/right-triangle">Right Triangle</Link>
         </li>
         <li className="list-group-item list-group-item-warning">
           <Link to="/strings">Strings</Link>
         </li>
         <li className="list-group-item list-group-item-success">
-          <Link to="/prime-numbers">Prime Numbers</Link>
+          <Link to="/number-right-triangle">Number Right Triangle</Link>
         </li>
         <li className="list-group-item list-group-item-info">
           <Link to="/multiplication-table">Multiplication Table</Link>
@@ -31,13 +32,13 @@ function Home() {
           <Link to="/check-within-100-500">Check if within 100 to 500</Link>
         </li>
         <li className="list-group-item list-group-item-primary">
-          <Link to="/right-triangle">Right Triangle</Link>
+        <Link to="/fibonacci">Fibonacci</Link>
         </li>
         <li className="list-group-item list-group-item-warning">
           <Link to="/triangle">Isosceles Triangle</Link>
         </li>
         <li className="list-group-item list-group-item-success">
-          <Link to="/number-right-triangle">Number Right Triangle</Link>
+          <Link to="/prime-numbers">Prime Numbers</Link>
         </li>
         <li className="list-group-item list-group-item-info">
           <Link to="/get-largest-number">Get Largest Number</Link>
@@ -50,6 +51,12 @@ function Home() {
         </li>
         <li className="list-group-item list-group-item-light">
           <Link to="/name-randomizer">Name Randomizer</Link>
+        </li>
+        <li className="list-group-item list-group-item-light">
+          <Link to="/practice-right-triangle">Practice Right Triangle</Link>
+        </li>
+        <li className="list-group-item list-group-item-light">
+          <Link to="/practice-number-right-triangle">Practice Number Right Triangle</Link>
         </li>
       </ul>
     </div>
